@@ -1,1 +1,7 @@
-#include <zmk/display/nice_view_adapter.overlay>
+&i2c0 {
+    status = "okay";
+};
+
+&nice_view_adapter {
+    i2c-bus = <&i2c0>;
+};
