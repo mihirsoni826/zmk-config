@@ -1,7 +1,7 @@
-&i2c0 {
+&i2c1 {
     status = "okay";
 };
 
 &nice_view_adapter {
-    i2c-bus = <&i2c0>;
+    i2c-bus = <&i2c1>;
 };
