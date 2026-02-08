@@ -1,0 +1,8 @@
+&i2c1 {
+    status = "okay";
+};
+
+&nice_view_adapter {
+    i2c-bus = <&i2c1>;
+    reset-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; // adjust pin number if needed
+};
